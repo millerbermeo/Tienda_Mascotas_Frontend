@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf');
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.ttf');
+    font-weight: 500;
+    
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.ttf');
+    font-weight: bold;
+    
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 860px;
+    background-color: #aadbf8;
+    border-radius: 45px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card >*{
+    margin-top: 50px;
+}
+
+.puntos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.left {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4e93de;
+}
+
+.left.active {
+    background-color: #fff;
+} 
+
+.right {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.right.active {
+    background-color: #4e93de;
+}
+
+.title {
+    margin-top: 75px;
+}
+
+.title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #2C4674;
+    
+}
+
+.title p {
+    text-align: right;
+    font-family: 'Montserrat';
+    color: #fff;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.txt {
+    margin-top: 75px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #2c4674;
+}
+
+.txt p {
+    font-weight: 500;
+}
+
+.flotantes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 95px;
+}
+
+.img-1 {
+   transform: scale(1.1);
+   opacity: 100%;
+   transition: .5s;
+}
+
+.img-1.active {
+    position: fixed;
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+.img-2 {
+    transform: scale(1.1) translateY(400px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.img-2.active {
+    opacity: 100%;
+    transform: scale(1.1) translateY(0);
+}
+
+.btn-flotante {
+    width: 70px;
+    height: 70px;
+    background-color: #2C4674;;
+    border-radius: 50%;
+    position: absolute;
+    top: 700px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-flotante:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.btn-flotante img {
+    width: 50px;
+}

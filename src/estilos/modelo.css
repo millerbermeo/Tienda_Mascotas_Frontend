@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf');
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.ttf');
+    font-weight: 500;
+    
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.ttf');
+    font-weight: bold;
+    
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 860px;
+    background-color: #dbeff9;
+    border-radius: 45px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-modelo {
+    margin: 0;
+    width: 100%;
+    background-color: #488db3;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 45px;
+}
+
+.card-modelo img {
+    margin-top: 25px;
+    transform: scale(1.1);
+}
+
+.cabezera {
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+
+}
+
+.datos-mascota {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    z-index: 2;
+    gap: 15px;
+    font-family: 'Montserrat';
+    color: #2C4674;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.atras {
+    transition: all 500ms;
+}
+
+.atras:hover {
+    transform: translateX(-15px);
+}
+
+.datos-mascota div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90px;
+    height: 85px;
+    background-color: #ffffffac;
+    border-radius: 20%;
+}
+
+.datos-mascota div p {
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.mascota {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    color: #2C4674;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.rasa {
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    width: 90%;
+    text-align: left;
+    font-size: 23px;
+    color: gray;
+}
+
+.infodueno {
+    margin-top: 20px;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.infodueno img {
+    width: 85px;
+}
+
+.datos-dueno {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.datos-dueno p {
+    color: #2C4674;
+}
+
+#city {
+    color: #2c4674b3;
+    font-size: 18px;
+}
+
+.btn-final {
+    margin-top: 30px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-final button {
+    font-family: 'Montserrat';
+    width: 380px;
+    height: 70px;
+    border: none;
+    border-radius: 35px;
+    background-color: #58c084;
+    font-size: 22px;
+    color: #fff;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.btn-final button:hover {
+    transform: scale(1.1);
+}
+
